@@ -1,0 +1,37 @@
+//Extract, Count, Sum, Product of digits
+import java.util.Scanner;
+class  DigitOperations
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n=sc.nextInt();
+		int count=0;
+		int sum=0;
+		int pro=1;
+		System.out.print("Digit:");
+		while(n>0)
+		{
+			int d=n%10;
+			System.out.println(d+" ");
+			count++;
+			sum=sum+d;
+			pro=pro*d;
+			n=n/10;
+		}
+		System.out.println("count"+count);
+		System.out.println("sum"+sum);
+		System.out.println("product"+pro);
+	}
+}
+
+/*
+OutPut:
+Enter the number
+1234
+Digits:4 3 2 1 
+Count:4
+Sum:10
+Product:24
+*/
