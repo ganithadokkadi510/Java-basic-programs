@@ -1,0 +1,32 @@
+//WAPT count the numbers from m to n
+import java.util.Scanner;
+class  CountMtoN
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the m number");
+		int m=sc.nextInt();
+		System.out.println("Enter the n number");
+		int n=sc.nextInt();
+
+		int count=0;
+
+		for(int i=m;i<=n;i++)
+		{
+			count++;
+		}
+		System.out.println("Count of m to n numbers: "+count);
+		System.out.println("????????????????????????????");
+	}
+}
+
+/*
+OutPut:
+Enter the m number
+1
+Enter the n number
+5
+count=1,2,3,4,5=5
+Count of m to n numbers: 5
+*/
